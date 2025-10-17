@@ -2,13 +2,17 @@ import joblib
 import requests
 import streamlit as st
 import pandas as pd
-
+from compress_pickle import create_compress_file
+import os
 
 # for fetching API for movies poster
 
 # Importing dataset
 
-data_dict = joblib.load('data_dict.pkl')
+if not os.path.exists("data_dict_compressed.pkl"):
+    create_compress_file()
+
+data_dict = joblib.load("data_dict_compressed.pkl")
 data = pd.DataFrame(data_dict)
 
 # Getting list of movies titles from dataset
