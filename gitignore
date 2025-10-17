@@ -1,6 +1,0 @@
-venv
-# Ignore local data files
-data.pkl
-
-# Ignore IDE/project settings
-.idea/
