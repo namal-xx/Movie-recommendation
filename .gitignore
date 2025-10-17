@@ -1,6 +1,8 @@
 venv
-# Ignore local data files
+echo "# Ignore local data files
 data.pkl
+similarity.pkl
 
 # Ignore IDE/project settings
 .idea/
+" > .gitignore
