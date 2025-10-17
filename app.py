@@ -1,12 +1,15 @@
-import streamlit as st
 import joblib
-# for fetching API for movies poster
-
 import requests
+import streamlit as st
+import pandas as pd
+
+
+# for fetching API for movies poster
 
 # Importing dataset
 
-data = joblib.load('data.pkl')
+data_dict = joblib.load('data_dict.pkl')
+data = pd.DataFrame(data_dict)
 
 # Getting list of movies titles from dataset
 movies_list = data.title.values
