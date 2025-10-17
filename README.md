@@ -1,8 +1,11 @@
 ## Movie recommender System 🎬
 
-#### This is Machine learning power web that recommends 5 movies options according to user-selective movie
+#### A machine learning-powered application that suggests 5 movies similar to the one you select, helping you discover new favorites!
+
+**For Live Streamlit app** [Click Here](https://movie-recommendation-czziyr4l5nmza9wwhagb38.streamlit.app/)
 
 ### 📌What I did:
+
 * **Data preprocessing** (cleaned and handled missing values, applies `ast` and `Vectorization` on text and performed `NLP` techniques to get results.)
 * **Text Vectorization** and applied techniques like `cosine` to find similarity between movies.
 * Created a function for recommendation.
