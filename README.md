@@ -6,10 +6,10 @@
 
 ### 📌What I did:
 
-* **Data preprocessing** (cleaned and handled missing values, applies `ast` and `Vectorization` on text and performed `NLP` techniques to get results.)
-* **Text Vectorization** and applied techniques like `cosine` to find similarity between movies.
-* Created a function for recommendation.
-* Created a `Streamlit` interface that instantly recommends 5 movies based on the user-selective movie.
+* **Data preprocessing:** Cleaned and handled missing values, applies `ast.literal_eval()` and `Vectorization` on text and performed `NLP` techniques to get results.
+* **Text Vectorization & Similarity:** Used vectorization and applied techniques like `cosine_similarity` to find similarity between movies.
+* **Recommendation Function** Created a function for recommendation that returns 5 movies based on the selective movie.
+* **Streamlit Interface:** Created a `Streamlit` interface that instantly recommends 5 movies based on the user-selective movie.
 
 ### 🛠 Tech-stack:
 
