@@ -3,6 +3,7 @@ import requests
 import streamlit as st
 import pandas as pd
 from compress_pickle import create_compress_file
+from compressed_similarity import compress_simi
 import os
 
 # for fetching API for movies poster
@@ -25,8 +26,10 @@ selected_movie = st.selectbox(
     "List of Movies",
     movies_list,
 )
+if not os.path.exists("compressed_similarity.pkl"):
+    compress_simi()
 
-similarity = joblib.load("similarity.pkl")
+similarity = joblib.load("compressed_similarity.pkl")
 
 
 def fetch_poster(movie_id):
